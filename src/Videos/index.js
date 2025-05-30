@@ -1,14 +1,14 @@
 const videoUrls = [
-  { id: 1, url: import.meta.env.REACT_APP_AULA_1 },
-  { id: 2, url: import.meta.env.REACT_APP_AULA_2 },
-  { id: 3, url: import.meta.env.REACT_APP_AULA_3 },
-  { id: 4, url: import.meta.env.REACT_APP_AULA_4 },
-  { id: 5, url: import.meta.env.REACT_APP_AULA_5 },
-  { id: 6, url: import.meta.env.REACT_APP_AULA_6 },
-  { id: 7, url: import.meta.env.REACT_APP_AULA_7 },
-  { id: 8, url: import.meta.env.REACT_APP_AULA_8 },
-  { id: 9, url: import.meta.env.REACT_APP_AULA_9 },
-  { id: 10, url: import.meta.env.REACT_APP_AULA_10 },
+  { id: 1, url: import.meta.env.VITE_AULA_1 },
+  { id: 2, url: import.meta.env.VITE_AULA_2 },
+  { id: 3, url: import.meta.env.VITE_AULA_3 },
+  { id: 4, url: import.meta.env.VITE_AULA_4 },
+  { id: 5, url: import.meta.env.VITE_AULA_5 },
+  { id: 6, url: import.meta.env.VITE_AULA_6 },
+  { id: 7, url: import.meta.env.VITE_AULA_7 },
+  { id: 8, url: import.meta.env.VITE_AULA_8 },
+  { id: 9, url: import.meta.env.VITE_AULA_9 },
+  { id: 10, url: import.meta.env.VITE_AULA_10 },
 ];
 
 export const Videos = [
