@@ -107,6 +107,24 @@ export const SidebarWrapper = styled.div`
     height: auto;
     flex-direction: row;
     overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: transparent;
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
   }
 `;
 
