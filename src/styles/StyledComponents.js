@@ -111,6 +111,7 @@ export const SidebarWrapper = styled.div`
     &::-webkit-scrollbar {
       width: 8px;
       height: 8px;
+      background-color: transparent;
     }
 
     &::-webkit-scrollbar-thumb {
@@ -123,7 +124,7 @@ export const SidebarWrapper = styled.div`
     }
 
     &::-webkit-scrollbar-track {
-      background: #f1f1f1;
+      background: transparent;
     }
   }
 `;
