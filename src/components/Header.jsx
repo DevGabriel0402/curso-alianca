@@ -1,5 +1,5 @@
 import { HeaderWrapper, Logo } from "@/styles/StyledComponents";
-import CursoLogo from "@/assets/Logo.png";
+import CursoLogo from "@/assets/Logo-transparent.png";
 
 const Header = () => (
   <HeaderWrapper>
