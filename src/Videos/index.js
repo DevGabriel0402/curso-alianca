@@ -18,7 +18,7 @@ export const Videos = [
     description: "Entenda como o casamento representa uma aliança profunda e significativa entre duas pessoas.",
     url: videoUrls[0].url,
     thumbnail: "https://i.ytimg.com/vi/yWOgUmg37v4/maxresdefault.jpg",
-    releasedate: "2025-05-28",
+    dateAula: "2025-04-23",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ export const Videos = [
     description: "Descubra o significado da aliança do limiar e sua importância nas relações.",
     url: videoUrls[1].url,
     thumbnail: "https://i.ytimg.com/vi/yWOgUmg37v4/maxresdefault.jpg",
-    releasedate: "2025-05-29",
+    dateAula: "2025-04-30",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ export const Videos = [
     description: "Aprenda estratégias para compreender e solucionar conflitos de forma saudável.",
     url: videoUrls[2].url,
     thumbnail: "https://i.ytimg.com/vi/yWOgUmg37v4/maxresdefault.jpg",
-    releasedate: "2025-05-30",
+    dateAula: "2025-05-07",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ export const Videos = [
     description: "Veja como a intimidade pode ser fortalecida através de atitudes e escolhas conscientes.",
     url: videoUrls[3].url,
     thumbnail: "https://i.ytimg.com/vi/yWOgUmg37v4/maxresdefault.jpg",
-    releasedate: "2025-05-31",
+    dateAula: "2025-05-14",
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ export const Videos = [
     description: "Saiba como o perdão é essencial para restaurar relacionamentos e promover a paz.",
     url: videoUrls[4].url,
     thumbnail: "https://i.ytimg.com/vi/yWOgUmg37v4/maxresdefault.jpg",
-    releasedate: "2025-06-01",
+    dateAula: "2025-04-21",
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ export const Videos = [
     description: "Descubra maneiras práticas de exercer o perdão no dia a dia.",
     url: videoUrls[5].url,
     thumbnail: "https://i.ytimg.com/vi/yWOgUmg37v4/maxresdefault.jpg",
-    releasedate: "2025-06-02",
+    dateAula: "2025-05-28",
   },
   {
     id: 7,
@@ -66,7 +66,7 @@ export const Videos = [
     description: "Entenda como os conflitos podem revelar causas profundas e promover crescimento pessoal.",
     url: videoUrls[6].url,
     thumbnail: "https://i.ytimg.com/vi/yWOgUmg37v4/maxresdefault.jpg",
-    releasedate: "2025-06-03",
+    dateAula: "2025-06-04",
   },
   {
     id: 8,
@@ -74,7 +74,7 @@ export const Videos = [
     description: "Veja como resgatar o valor das alianças e compromissos na sociedade atual.",
     url: videoUrls[7].url,
     thumbnail: "https://i.ytimg.com/vi/yWOgUmg37v4/maxresdefault.jpg",
-    releasedate: "2025-06-04",
+    dateAula: "2025-06-11",
   },
   {
     id: 9,
@@ -82,7 +82,7 @@ export const Videos = [
     description: "Aprenda a importância de restaurar e fortalecer a aliança no casamento.",
     url: videoUrls[8].url,
     thumbnail: "https://i.ytimg.com/vi/yWOgUmg37v4/maxresdefault.jpg",
-    releasedate: "2025-06-05",
+    dateAula: "2025-06-18",
   },
   {
     id: 10,
@@ -90,6 +90,6 @@ export const Videos = [
     description: "Conheça os elementos fundamentais que compõem a aliança de sangue.",
     url: videoUrls[9].url,
     thumbnail: "https://i.ytimg.com/vi/yWOgUmg37v4/maxresdefault.jpg",
-    releasedate: "2025-06-06",
+    dateAula: "2025-06-25",
   },
 ];
