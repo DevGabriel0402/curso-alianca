@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const corPrimaria = "#AE312A";
+const corPrimaria = "#762626";
 
 export const HeaderWrapper = styled.header`
   background: ${corPrimaria};
