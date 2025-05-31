@@ -23,6 +23,11 @@ export const Logo = styled.div`
 
 export const ContentWrapper = styled.div`
   display: flex;
+  width: 100%;
+  max-width: 1140px;
+  min-height: calc(100dvh - 100px);
+  justify-content: center;
+  margin: 0 auto;
   padding: 2rem;
   gap: 2rem;
   flex-direction: row;
@@ -34,19 +39,22 @@ export const ContentWrapper = styled.div`
 `;
 
 export const MainVideoWrapper = styled.div`
-  flex: 3;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 800px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const VideoTitle = styled.h2`
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   width: 100%;
   margin-bottom: 1rem;
-  padding-left: 1rem;
+  color: ${corPrimaria};
 `;
 
 export const VideoContainer = styled.div`
@@ -85,18 +93,13 @@ export const VideoContainer = styled.div`
 `;
 
 export const Description = styled.p`
-  padding-left: 1rem;
   font-size: 1rem;
   width: 100%;
   text-align: start;
-
-  @media (max-width: 768px) {
-    padding-left: 0.5rem;
-  }
 `;
 
 export const SidebarWrapper = styled.div`
-  flex: 1;
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -104,6 +107,7 @@ export const SidebarWrapper = styled.div`
   overflow-y: auto;
 
   @media (max-width: 768px) {
+    width: 100%;
     height: auto;
     flex-direction: row;
     overflow-x: auto;
