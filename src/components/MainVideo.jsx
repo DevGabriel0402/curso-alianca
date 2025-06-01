@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { MainVideoWrapper, VideoTitle, VideoContainer, Description } from "@/styles/StyledComponents";
 import { TbPlayerPlayFilled } from "react-icons/tb";
-// import Play from "@/assets/play.png";
 
 const MainVideo = ({ selectedVideo }) => {
   const [showPlayer, setShowPlayer] = useState(false);
