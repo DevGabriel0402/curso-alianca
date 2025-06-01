@@ -164,12 +164,13 @@ export const VideoItem = styled.div`
     font-size: 1rem;
 
     @media (max-width: 768px) {
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -60%);
-      width: 60px;
-      height: 60px;
-      font-size: 1.5rem;
+      top: 0;
+      left: 0;
+      text-align: calc(center + 10px);
+      background: rgba(22, 19, 19, 0.3);
+      width: 100%;
+      height: 100%;
+      font-size: 2.5rem;
     }
   }
 
