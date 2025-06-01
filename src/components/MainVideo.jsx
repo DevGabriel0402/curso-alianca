@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MainVideoWrapper, VideoTitle, VideoContainer, Description } from "@/styles/StyledComponents";
-import Play from "@/assets/play.png"; // Assuming you have a play icon for the thumbnail
+import { TbPlayerPlayFilled } from "react-icons/tb";
+// import Play from "@/assets/play.png";
 
 const MainVideo = ({ selectedVideo }) => {
   const [showPlayer, setShowPlayer] = useState(false);
@@ -18,7 +19,7 @@ const MainVideo = ({ selectedVideo }) => {
           ></iframe>
         ) : (
           <>
-            <img className="icon-play" src={Play} alt="play icon" />
+            <TbPlayerPlayFilled className="icon-play" style={{ color: "#762626" }} />
             <img src={selectedVideo.thumbnail} alt="video preview" />
           </>
         )}
