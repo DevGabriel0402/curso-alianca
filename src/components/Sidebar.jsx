@@ -21,19 +21,9 @@ const Sidebar = ({ videos, selectedVideo, setSelectedVideo }) => {
                 position: "relative",
               }}
             >
-              <Thumbnail src={video.thumbnail} alt={video.title} />
+              <Thumbnail src={video.thumbnail} alt={video.title}></Thumbnail>
               {!isReleased && (
-                <div
-                  style={{
-                    position: "absolute",
-                    top: 10,
-                    right: 10,
-                    background: "rgba(0,0,0,0.6)",
-                    padding: "4px 6px",
-                    borderRadius: "4px",
-                    color: "white",
-                  }}
-                >
+                <div className="lock-icon">
                   <FaLock />
                 </div>
               )}

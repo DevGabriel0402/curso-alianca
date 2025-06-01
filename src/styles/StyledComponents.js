@@ -150,6 +150,29 @@ export const VideoItem = styled.div`
     color: ${({ disabled }) => (disabled ? "#333" : "#fafafa")};
   }
 
+  .lock-icon {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    background: rgba(22, 19, 19, 0.6);
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+
+    @media (max-width: 768px) {
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      width: 60px;
+      height: 60px;
+      font-size: 1.5rem;
+    }
+  }
+
   @media (max-width: 768px) {
     background-color: #262626;
     color: #fafafa;
@@ -170,6 +193,7 @@ export const Thumbnail = styled.img`
   height: 60px;
   object-fit: cover;
   margin-right: 0.5rem;
+  position: relative;
 
   @media (max-width: 768px) {
     width: 300px;
