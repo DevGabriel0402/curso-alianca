@@ -13,14 +13,13 @@ function App() {
   const [videoList, setVideoList] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
 
-  // ✅ Buscar vídeos do Firestore
   useEffect(() => {
     const getVideos = async () => {
       const videoCollectionRef = collection(db, "videos");
       const dados = await getDocs(videoCollectionRef);
       const lista = dados.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
       setVideoList(lista);
-      setSelectedVideo(lista[0]); // Define o primeiro vídeo como o padrão
+      setSelectedVideo(lista[0]);
     };
 
     getVideos();
