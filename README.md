@@ -1,6 +1,6 @@
 # 💍 Curso Aliança - Plataforma de Aulas em Vídeo
 
-Este projeto é uma plataforma educacional com foco no casamento como uma aliança. Desenvolvido com **React** e **Styled Components**, ele apresenta uma interface moderna, responsiva e dinâmica, permitindo o acesso progressivo aos vídeos conforme a data de liberação.
+Este projeto é uma plataforma educacional com foco no casamento como uma aliança. Desenvolvido com **React**, **Styled Components** e **Firebase**, ele apresenta uma interface moderna, responsiva e dinâmica, permitindo o acesso progressivo aos vídeos conforme a data de liberação e gerenciamento dos dados via Firestore.
 
 ---
 
@@ -35,6 +35,7 @@ Este projeto é uma plataforma educacional com foco no casamento como uma alian�
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [Vimeo Player Embed](https://developer.vimeo.com/player/embedding)
 - [DotEnv](https://www.npmjs.com/package/dotenv)
+- [Firebase](https://firebase.google.com/) (Firestore para armazenamento dos vídeos)
 
 ---
 
@@ -47,10 +48,10 @@ curso-alianca/
 │   ├── assets/             # Imagens e ícones do projeto
 │   ├── components/         # Componentes reutilizáveis (Header, Sidebar, etc.)
 │   ├── styles/             # Estilos globais e styled-components
-│   ├── Videos/             # Lista e dados das aulas
-│   ├── App.jsx             # Componente principal
-│   ├── main.jsx            # Ponto de entrada do React
-│   └── .env                # URLs dos vídeos em ambiente seguro
+│   ├── db/                # Configuração do Firebase
+│   ├── App.jsx            # Componente principal
+│   ├── main.jsx           # Ponto de entrada do React
+│   └── .env               # Variáveis de ambiente do projeto
 ├── index.html
 ├── vite.config.js
 └── package.json
@@ -70,16 +71,16 @@ cd curso-alianca
 # Instale as dependências
 npm install
 
-# Crie um arquivo .env com as URLs dos vídeos
+# Crie um arquivo .env com as variáveis do Firebase
 touch .env
 ```
 
 Exemplo de conteúdo para o `.env`:
 
 ```env
-VITE_AULA_1="https://player.vimeo.com/video/..."
-VITE_AULA_2="https://player.vimeo.com/video/..."
-...
+VITE_API_KEY="sua-chave-api"
+VITE_DOMAIN="seu-dominio.firebaseapp.com"
+VITE_PROJECT_ID="seu-project-id"
 ```
 
 ```bash
@@ -114,6 +115,15 @@ Renderiza:
 
   - `id`, `title`, `description`
   - `url`, `thumbnail`, `dateAula`
+
+---
+
+## 💾 Integração com Firebase
+
+- O projeto utiliza o **Firebase Firestore** para armazenar e recuperar a lista de vídeos.
+- As credenciais do Firebase devem ser configuradas no arquivo `.env`.
+- O arquivo `src/db/Index.js` faz a inicialização do Firebase.
+- As regras do Firestore devem permitir leitura dos dados para o funcionamento correto.
 
 ---
 
