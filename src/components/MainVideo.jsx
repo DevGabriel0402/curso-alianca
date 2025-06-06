@@ -19,7 +19,7 @@ const MainVideo = ({ selectedVideo }) => {
         ) : (
           <>
             <TbPlayerPlayFilled className="icon-play" style={{ color: "#762626" }} />
-            <img src={selectedVideo.thumbnail} alt="video preview" />
+            <img src={selectedVideo.thumb} alt="video preview" />
           </>
         )}
       </VideoContainer>

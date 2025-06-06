@@ -1,17 +1,37 @@
-import { useState } from "react";
-import { Videos } from "./Videos";
+import { useState, useEffect } from "react";
+import { getFirestore, collection, getDocs } from "firebase/firestore";
+import { firebaseApp } from "./db/Index";
+
 import Header from "./components/Header";
 import Content from "./components/Content";
-
 import { Footer } from "./components/Footer";
+import { Loading } from "./components/Loading";
+
+const db = getFirestore(firebaseApp);
 
 function App() {
-  const [selectedVideo, setSelectedVideo] = useState(Videos[0]);
+  const [videoList, setVideoList] = useState([]);
+  const [selectedVideo, setSelectedVideo] = useState(null);
+
+  // ✅ Buscar vídeos do Firestore
+  useEffect(() => {
+    const getVideos = async () => {
+      const videoCollectionRef = collection(db, "videos");
+      const dados = await getDocs(videoCollectionRef);
+      const lista = dados.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+      setVideoList(lista);
+      setSelectedVideo(lista[0]); // Define o primeiro vídeo como o padrão
+    };
+
+    getVideos();
+  }, []);
+
+  if (!selectedVideo) return <Loading />;
 
   return (
     <>
       <Header />
-      <Content videos={Videos} selectedVideo={selectedVideo} setSelectedVideo={setSelectedVideo} />
+      <Content videos={videoList} selectedVideo={selectedVideo} setSelectedVideo={setSelectedVideo} />
       <Footer />
     </>
   );

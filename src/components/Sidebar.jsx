@@ -21,7 +21,7 @@ const Sidebar = ({ videos, selectedVideo, setSelectedVideo }) => {
                 position: "relative",
               }}
             >
-              <Thumbnail src={video.thumbnail} alt={video.title}></Thumbnail>
+              <Thumbnail src={video.thumb} alt={video.title}></Thumbnail>
               {!isReleased && (
                 <div className="lock-icon">
                   <FaLock />
@@ -29,7 +29,7 @@ const Sidebar = ({ videos, selectedVideo, setSelectedVideo }) => {
               )}
               <VideoInfo>
                 <h3>
-                  {video.id}. {video.title}
+                  {video.idAula}. {video.title}
                 </h3>
                 <p>{video.description}</p>
               </VideoInfo>
